@@ -1,0 +1,177 @@
+body {
+    background-color: #EAE7DC;
+    height:400vh;
+    transition: background 1s ease;
+}
+
+#name_head {
+    color: #8E8D8A;
+    text-align: center;
+    font-family: "Didot", serif;
+    font-size: 40px;
+}
+
+.menu_button {
+    display: inline-block;
+    cursor: pointer;
+    border: 2px #8E8D8A;
+    position:absolute;
+    right: 150px;
+    top: 40px;
+}
+
+.top_bar, .mid_bar,.low_bar {
+    width:30px;
+    height: 5px;
+    margin: 4px 0;
+    background-color: #E98074;
+    transition: 0.5s;
+}
+
+.swap .top_bar {
+    opacity: 0;
+}
+
+.swap .low_bar {
+    opacity: 0;
+}
+
+#top_divider {
+    color:#E98074 ;
+}
+
+img {
+    border-radius: 50%;
+    height: auto;
+    width:30%;
+    position:relative;
+    left:80px;
+    float:left;
+    border: 5px solid #E85A4F;
+}
+
+.typing_message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cursor {
+    display: inline-block;
+    top: 1000px;
+    width: 2px;
+    height: 42px;
+    margin-left:6px;
+    background-color: #E85A4F;
+    animation: blink .5s linear infinite alternate;
+}
+
+#message {
+    display: inline-block;
+    padding-left:10%;
+    float:right;
+    color: #E98074;
+    font-family: "American Typewriter", serif;
+    font-size: 42px;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    45% {opacity: 1;}
+    65% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#intro-paragraph {
+    font-family: "Didot", serif;
+    color: #8E8D8A;
+    font-size: 32px;
+    width:50%;
+    padding-right:5%;
+    padding-top:5%;
+
+    float:right;
+}
+
+body.red_color {
+    background-color: #E85A4F;
+}
+
+.before_scroll {
+    display: none;
+}
+
+.after_scroll {
+    display: inline-block;
+    width:100%;
+    position: relative;
+    top: 5%;
+    align-self: center;
+    animation: fadeIn 3s;
+}
+
+.message2 {
+   /*display: inline-block;
+    height:50%;
+    width:100%;
+    animation: fadeIn 3s;
+    margin-top:600px; */
+}
+
+body.black_color {
+    background-color: darkblue;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    100% {opacity: 0;}
+    0% {opacity: 1;}
+}
+
+#navbar {
+    top: 0;
+    width:100%;
+    z-index: 99;
+    overflow: visible;
+    background-color: #EAE7DC;
+    padding: 10px 2px;
+    transition: 0.5s;
+    position: fixed;
+}
+
+#wrapper {
+    margin-top: 20%;
+}
+
+.dropdown {
+    display:block;
+}
+
+.dropdwn {
+    display:inline-block;
+    position:relative;
+}
+
+.options {
+    display:none;
+    position:absolute;
+    min-width:120px;
+    z-index:1;
+}
+
+.options a {
+    padding: 8px 10px;
+    display:block;
+    background-color: #EAE7DC;
+    color: #E98074;
+    border: 1px solid black;
+    font-family: "Didot", serif;
+}
+
+.options a:hover {background-color: #8E8D8A}
+
+.show {display:block;}
