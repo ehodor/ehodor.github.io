@@ -1,3 +1,10 @@
+let jquery = document.createElement("script");
+
+jquery.addEventListener("load", proceed); // pass my hoisted function
+jquery.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js";
+document.querySelector("head").appendChild(jquery);
+
+
 function swap(x) {
     x.classList.toggle("swap");
 }
