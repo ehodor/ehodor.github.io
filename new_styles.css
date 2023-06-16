@@ -16,8 +16,8 @@ body {
     cursor: pointer;
     border: 2px #8E8D8A;
     position:absolute;
-    right: 150px;
-    top: 40px;
+    right: 10%;
+    top: 40%;
 }
 
 .top_bar, .mid_bar,.low_bar {
@@ -45,7 +45,7 @@ img {
     height: auto;
     width:30%;
     position:relative;
-    left:80px;
+    left:8%;
     float:left;
     border: 5px solid #E85A4F;
 }
@@ -111,11 +111,14 @@ body.red_color {
 }
 
 .message2 {
-   /*display: inline-block;
+   display: inline-block;
     height:50%;
     width:100%;
     animation: fadeIn 3s;
-    margin-top:600px; */
+    font-family: "American Typewriter", serif;
+    font-size: 42px;
+    text-align: center;
+
 }
 
 body.black_color {
@@ -175,3 +178,22 @@ body.black_color {
 .options a:hover {background-color: #8E8D8A}
 
 .show {display:block;}
+
+#bio_page {
+     font-family: "Didot", serif;
+    color: #EAE7DC;
+    font-size: 32px;
+    text-align: center;
+}
+
+#message3 {
+    color: royalblue;
+}
+
+#message4 {
+    color: aquamarine;
+}
+
+#message5 {
+    color: honeydew;
+}

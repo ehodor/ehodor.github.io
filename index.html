@@ -37,11 +37,16 @@
     </div>
         </div>
     <div id="bio_page" class="before_scroll">
-        <p>I am currently a sophomore student at Stevens Institute of Technology. I'm majoring in Computer Science,
-                        and I'm always trying to branch out and improve my coding skills.</p>
+        <p>I am currently a 3/4 student at Stevens Institute of Technology. I'm majoring in Computer Science,
+                        and I'm always trying to branch out and improve my coding skills. I have taken classes and am
+        skilled in several programming languages, such as Python, C, C++, Java, HTML, CSS, and JavaScript. I am also
+        proficient in math topics such as statistics, and am well-acquainted with R and LaTeX!</p>
     </div>
     <div id="typing_message2" class="before_scroll">
         <span id="message2" class="message2"></span>
+        <span id="message3" class="message2"></span>
+        <span id="message4" class="message2"></span>
+        <span id="message5" class="message2"></span>
         <span id="cursor2"></span>
     </div>
 <script>
@@ -52,7 +57,10 @@
          $("body").addClass("red_color")
       }
       if($(this).scrollTop() > 400 && $(this).scrollTop() <=1000 && !fired) {
-          typing("I would describe myself as", "#message2");
+          typing("I would describe myself as:", "#message2");
+          typing("hardworking", "#message3");
+           typing("ambitious", "#message4");
+            typing("open to new ideas", "#message5");
           fired = true;
       }
       if($(this).scrollTop() > 400 && $(this).scrollTop() <=1000) {

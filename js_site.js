@@ -1,6 +1,6 @@
 let jquery = document.createElement("script");
 
-jquery.addEventListener("load", proceed); // pass my hoisted function
+jquery.addEventListener("load", proceed);
 jquery.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js";
 document.querySelector("head").appendChild(jquery);
 
@@ -24,6 +24,16 @@ async function typing(message, arr , delay=100) {
         i++;
     }
 
+}
+
+ async function deleteM(message_to_del) {
+    const del=  $(message_to_del).html()
+    all_lets = del.split("");
+    while (0 < all_lets.length) {
+        await wait(100);
+        all_lets.pop()
+        $(del).html(all_lets.join(""));
+    }
 }
 
 function links_dropdown() {
